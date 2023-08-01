@@ -1,0 +1,59 @@
+body{
+    background-color:burlywood;
+}
+#radial{
+    height:max-content;
+    width:fit-content;
+    background: radial-gradient(#049CC8,#3CE4A5);
+    padding: 10px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+
+
+}
+#radial:hover{
+    cursor:pointer;
+}
+button{
+    background-color: transparent;
+    border-color: transparent;
+}
+button:hover{
+    cursor: pointer;
+    color: black;
+}
+h1{
+
+    font-family: Impact;
+    text-align: center ;
+    font-weight: lighter;
+    
+}
+a{
+    color: white;
+    text-decoration: none;
+   
+
+
+}
+a:hover{
+    color:rgb(203, 224, 11);
+}
+
+
+
+#linear{
+    height: 300px;
+    width: 300px;
+    background: linear-gradient(to bottom left,#049CC8,#3CE4A5);
+
+
+}
+#conical{
+    height: 300px;
+    width: 300px;
+    background: conic-gradient( #049CC8,#3CE4A5);
+    border-top-left-radius: 10px;
+}
