@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-size: 40px;
+        }
+        #a li{
+            list-style-type: none;
+        }
+        #k{
+            list-style-position: inside;      
+            list-style-type:decimal-leading-zero;
+        }
+       
+        #ki li{
+           list-style-type: none ;
+        }
+        #ki li::before{
+            content:'';
+            display: inline-block;
+            margin-right: 20px;
+            height: 30px;
+            width: 30px;
+            background-image:url('leaf.png');
+            background-size:cover;
+
+
+        }
+
+    </style>
+</head>
+<body>
+    <h3>List 1</h3>
+    <ul id="k" >
+        <li>kathir</li>
+        <li>krishna</li>
+        <li>rahul</li>
+        <li>ram</li>
+        <li>Naveen</li>
+    </ul>
+    <h3>List 2</h3>
+    <ul id="ki">
+        <li>kathir</li>
+        <li>krishna</li>
+        <li>rahul</li>
+        <li>ram</li>
+        <li>Naveen</li>
+    </ul>
+    <h3>List 3</h3>
+    <ul id="a">
+        <li>kathir</li>
+        <li>krishna</li>
+        <li>rahul</li>
+        <li>ram</li>
+        <li>Naveen</li>
+    </ul>
+</body>
+</html>
