@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .ht > p {                     
+            color:red ; 
+        }
+        div[class="inner"]{
+            color: rgb(39, 145, 239);
+        }
+        .ht+p{
+            color: turquoise; 
+        }
+        div[id="cc"]{
+            background-color: rgb(136, 132, 205);
+        }
+        a[title="link1"]{
+            color: rgb(232, 79, 18);
+        }
+        a[href="test.png"]{
+            color: rgb(233, 56, 239);
+        }
+        a[href$=".png"]{
+            color: rgb(233, 56, 239);
+        }
+    </style>
+
+<!--selector + next selector will give the property to the adjacent selector to the first selector
+ ie.. first p tag that comes after the ht calss -->
+
+ <!-- selector > tag    selects the child of the selector alone 
+ie.. for ht tag there are 4 p child and a div child-->
+
+
+<!--     href$=".png"     this is used to select the href tags with ending as png
+          href^="#"       this is used to select the href tags with starting as #
+
+ -->
+
+
+
+</head>
+<body>
+    <div class="ht">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quia i</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat, earum?</p>
+        <div class="inner">
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut, eaque? jis</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur, minus!</p>
+        <div id="cc">hey its an id</div>
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+
+    <a href="#" title="link1">link1</a>
+    <a href="#" title="link2">link2</a>
+    <a href="test.png" title="link3">link3</a>
+    <a href="kathir.png" title="link4">link4</a>
+
+
+
+</body>
+
+</html>
