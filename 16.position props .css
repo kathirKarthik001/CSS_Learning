@@ -1,0 +1,80 @@
+/*
+
+AVAILABLE POSITIONING PROPERTIES
+
+1.Static      - DEFAULT THING everything will be static by default
+2.Relative
+    LTRB
+3.Absolute
+    LTRB
+    Relative
+4.Fixed
+5.Sticky
+*/
+.main {
+    border: 5px solid gray;
+    width: 500px;
+    min-height: 500px;
+    font-weight: bold;
+    margin: auto;
+  }
+  
+  .box {
+      width: 100px;
+    height: 100px;
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+  }
+  
+  .box1 {
+    background-color: teal;
+  }
+  
+  .box2 {
+    background-color: tomato;
+  }
+            /* box3 is in static */
+  .box3 {
+    background-color: yellowgreen; 
+  }
+  .box4 {
+      background-color: rgb(39, 206, 221);
+      width: 100px;
+    height: 100px;
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+  }
+
+
+   /* relative */
+.main {
+  position: relative;    /* it should be given in relative so that the box2 can be positioned only inside the main box */
+}
+
+.box1 {
+    position: relative;
+    left: 30px;
+    top: 10px;
+}
+
+
+
+
+    /* absolute */
+.box2 {
+    position: absolute;
+     right: 0px;             /*  absolute removes the content from the flow and positions it by considering the whole html page*/
+    top: 30px;
+}
+
+
+
+     /* fixed */ 
+.box4{ 
+    position: fixed;
+    right:50%;
+     top: 50%;         /*can be moved anywhere */
+     /* it is always in fixed postion of the screen  mainly USED TO MAKE ADVERTISEMENT ON THE SIDE OF THE PAGE */
+}

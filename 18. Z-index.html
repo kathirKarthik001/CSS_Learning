@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            height: 400px;
+            width: 400px;
+            background-color: grey;
+            position: relative;
+        }
+        .box div{
+            height: 70px;
+            width:70px;
+            
+        }
+        .box1{
+            background-color:teal;
+            position: absolute;
+            top: 50px;
+            left: 100px;
+             z-index: 1;          /* item with high z index will appear first (or) appear in front
+             */
+        }
+        .box2{
+            background-color:orangered;
+            position: absolute;
+            top: 100px;
+            left: 150px;
+            z-index: 2;
+        }
+        .box3{
+            background-color:rgb(49, 170, 170);
+            position: absolute;
+            top: 150px;
+            left: 200px;
+           
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="box1">BOX 1</div>
+        <div class="box2">BOX 2</div>
+        <div class="box3">BOX 3</div>
+    </div>
+</body>
+</html>
