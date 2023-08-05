@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+   
+    p:nth-last-of-type(1){
+      color:blue;
+    }
+
+    li:nth-of-type(1){
+      color:red;
+    }
+    li:nth-last-of-type(1){
+      color:blue;
+    }
+
+    .l2 li:nth-of-type(odd){
+      color:purple;
+    }
+    .l2 li:nth-of-type(even){
+      color:green;
+    }
+    li:only-child{
+         color: crimson;      /* selects the list which has only one child */
+    }
+    h5:only-of-type{
+        color: gold; /* selects the item which is present only once  */
+    }
+
+    p:first-of-type{
+        color: rgb(14, 231, 231);
+    }
+    p:nth-of-type(2){
+      color:orangered;
+    }
+    p:last-of-type{
+        color: rgb(234, 49, 49);
+
+    }
+
+
+
+  </style>
+</head>
+<body>
+    <h5>only 1 h5 is present</h5>
+  <h3>CSS Pseudo Class Selector | :nth-of-type | :nth-last-of-type</h3>
+
+  <ul class="l1">
+    <li>item-1</li>
+    <li>item-2</li>
+    <li>item-3</li>
+    <li>item-4</li>
+    <li>item-5</li>
+  </ul>
+  <ul class="l2">
+    <li>item-1</li>
+    <li>item-2</li>
+    <li>item-3</li>
+    <li>item-4</li>
+    <li>item-5</li>
+  </ul>
+  <ul class="l3">
+    <li>item-1</li>
+    
+  </ul>
+
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut error totam dolores! Necessitatibus recusandae dolorum voluptatem quos blanditiis perferendis aliquid.</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut error totam dolores! Necessitatibus recusandae dolorum voluptatem quos blanditiis perferendis aliquid.</p>  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut error totam dolores! Necessitatibus recusandae dolorum voluptatem quos blanditiis perferendis aliquid.</p>  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut error totam dolores! Necessitatibus recusandae dolorum voluptatem quos blanditiis perferendis aliquid.</p>
+
+</body>
+</html>
