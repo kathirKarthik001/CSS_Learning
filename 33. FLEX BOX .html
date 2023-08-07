@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            border: 5px rgb(0, 0, 0) solid;
+            padding: 5px;
+
+        }
+        .item{
+            padding: 10px;
+            margin: 20px;
+            border: 5px solid rgb(235, 23, 23);
+            font-size: 40px;
+            font-weight: bold;
+        }
+        .item:nth-of-type(odd){
+            background-color: aqua;
+        }
+
+        /* FLEX BOX */
+        .container{
+            display: flex;
+            /* flex-direction: row; */
+            /* flex-direction: row-reverse;
+            flex-direction: column;
+            flex-direction: column-reverse; */
+        }
+
+        /* FLEX WRAPPING */
+
+        .container2{
+            border: 5px rgb(0, 0, 0) solid;
+            padding: 5px;
+            width:350px;
+            margin-top: 30px;
+
+            display: flex;
+            flex-direction: row;
+
+            flex-wrap:wrap;
+            /* flex-wrap:wrap-reverse; */
+        }
+
+        .box{
+            padding: 10px;
+            margin: 20px;
+            border: 5px solid rgb(235, 23, 23);
+            font-size: 40px;
+            font-weight: bold;
+            background-color: rgb(184, 225, 231);
+           
+        }
+
+
+        /* FLEX JUSTIFY CONTENT */
+
+        .container3{
+            border: 5px rgb(0, 0, 0) solid;
+            padding: 5px;
+            
+            margin-top: 30px;
+
+            display: flex;
+            flex-direction: row;
+
+            justify-content: center;
+            /* justify-content: flex-start;
+            justify-content: flex-end;
+            justify-content:space-between;
+            justify-content:space-around;
+            justify-content:right; 
+            etc...
+            */
+
+        }
+        .element{
+            padding: 10px;
+            margin: 20px;
+            border: 5px solid;
+            font-size: 40px;
+            font-weight: bold;
+            background-color: rgb(245, 121, 44);
+            color: azure;
+        }
+
+        /* FLEX ALIGN CONTENT */
+        .ALIGN{
+            border: 5px rgb(0, 0, 0) solid;
+            padding: 5px;
+            height: 250px;
+            width: 300px;
+            
+            margin-top: 30px;
+
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+
+            justify-content:left;
+            
+            align-content:space-evenly;
+            
+            /* align-items:flex-start;
+            align-items:flex-end;
+            align-items:first baseline;
+            align-items:last baseline;
+            align-items:stretch; */
+           
+        }
+        .flex-item{
+            padding: 10px;
+            margin: 20px;
+            border: 5px solid;
+            font-size: 40px;
+            font-weight: bold;
+            background-color: rgb(245, 121, 44);
+            color: azure;
+        }
+
+        /* FLEX ORDER */
+        .order{
+            border: 5px rgb(0, 0, 0) solid;
+            padding: 5px;
+            height: 250px;
+            width: 300px;
+            
+            margin-top: 30px;
+
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+
+            justify-content:left;
+            
+            align-content:space-evenly;
+
+        }
+        .boxy1,.boxy2,.boxy3,.boxy4,.boxy5{
+            padding: 10px;
+            margin: 20px;
+            border: 5px solid;
+            font-size: 40px;
+            font-weight: bold;
+            background-color: rgb(236, 116, 42);
+            color: azure;
+            order:4;
+        }
+        .boxy1{
+            order:5
+        }
+        .boxy2{
+            order:4;
+        }
+        .boxy4{
+            order:3;
+        }
+        .boxy3{
+            order:2;
+        }
+        .boxy5{
+            order:1;
+        }
+       
+
+
+
+    </style>
+
+</head>
+<body>
+    <h1>FLEX BOX</h1>
+    <div class="container">
+        <div class="item 1">1</div>
+        <div class="item 2">2</div>
+        <div class="item 3">3</div>
+        <div class="item 4">4</div>
+        <div class="item 5">5</div>
+    </div>
+
+
+    <h1>FLEX WRAP</h1>
+    <div class="container2">
+        <div class="box 1">1</div>
+        <div class="box 2">2</div>
+        <div class="box 3">3</div>
+        <div class="box 4">4</div>
+        <div class="box 5">5</div>
+    </div>
+
+
+    <h1>FLEX JUSTIFY CONTENT</h1>
+    <div class="container3">
+        <div class="element 1">1</div>
+        <div class="element 2">2</div>
+        <div class="element 3">3</div>
+        <div class="element 4">4</div>
+        <div class="element 5">5</div>
+    </div>
+
+    <h1>FLEX ALIGN</h1>
+    <div class="ALIGN">
+        <div class="flex-item box-1">1</div>
+        <div class="flex-item box-2">2</div>
+        <div class="flex-item box-3">3</div>
+        <div class="flex-item box-4">4</div>
+        <div class="flex-item box-5">5</div>
+    </div>
+
+    <h1>FLEX ORDER</h1>
+    <div class="order">
+       <div class="boxy1">1</div>
+       <div class="boxy2">2</div>
+       <div class="boxy3">3</div>
+       <div class="boxy4">4</div>
+       <div class="boxy5">5</div>
+    </div>
+</body>
+</html>

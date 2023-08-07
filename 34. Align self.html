@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+    /* ALIGN SELF */
+
+        .container{
+            height: 300px;
+            width: 200px;
+            border: 5px black solid;
+            display: flex;
+            flex-direction:row;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            font: 50px bold;
+            color: white;
+    
+        }
+        .a{
+            background-color: orangered;
+            padding: 5px;
+            margin: 10px;
+    
+        }
+        .box1{
+            align-self:stretch;
+        }
+        .box2{
+            align-self:flex-start;
+            /* align-self:flex-start== giving nothing (DEFAULT) */
+
+        }
+        .box3{
+            align-self:center;
+        }
+        .box4{
+            align-self:center;
+        }
+        .box5{
+            align-self:flex-end;
+        }
+
+        /* FLEX GROW */
+
+        .container2{
+            height: 100px;
+            width:500px;
+            border: 5px black solid;
+            display: flex;
+            flex-direction:row;
+            font: 50px bold;
+            color: white;
+        }
+        .b{
+            background-color: orangered;
+            padding: 5px;
+            margin: 2px;
+            flex-grow:1;
+        }
+
+        .item1{
+            flex-grow:2;
+        }
+    
+
+        /* FLEX SHRINK */
+
+        .container3{
+            width: 400px;
+            border: 5px black solid;
+            display: flex;
+            font: 50px bold;
+            color: white;
+            
+        }
+        .c{
+            background-color: orangered;
+            padding: 5px;
+            margin: 2px;
+            text-align: center; 
+            align-items: stretch;
+            width: 70px;
+
+            /* flex-shrink:1; */
+        }
+
+        .b2{
+            background-color: rgb(53, 192, 214);
+            flex-shrink:3;
+        }
+        
+    </style>
+</head>
+<body>
+    
+    <h1>ALIGN SELF</h1>
+    <div class="container">
+        <div class="a box1">1</div>
+        <div class="a box2">2</div>
+        <div class="a box3">3</div>
+        <div class="a box4">4</div>
+        <div class="a box5">5</div>
+    </div>
+
+    <h1>FLEX GROW</h1>
+    <div class="container2">
+        <div class="b item1">1</div>
+        <div class="b item2">2</div>
+        <div class="b item3">3</div>
+        <div class="b item4">4</div>
+        <div class="b item5">5</div>
+    </div>
+
+    <h1>FLEX SHRINK</h1>
+    <div class="container3">
+        <div class="c b1">1</div>
+        <div class="c b2">2</div>
+        <div class="c b3">3</div>
+        <div class="c b4">4</div>
+        <div class="c b5">5</div>
+    </div>
+
+</body>
+</html>

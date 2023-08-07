@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p:not(.para){
+            color:rgb(223, 83, 23) ;
+        }
+        p:lang(fr){
+            color:magenta
+        }
+    </style>
+</head>
+<body>
+    
+    <h2>paragraph whose class is  <b> not </b> para is selected</h2>
+     <p class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos doloremque a consequatur officiis error. Ipsa?</p>
+   
+
+    <p class="uuuu">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos doloremque a consequatur officiis error. Ipsa?</p>
+
+   
+    <p class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos doloremque a consequatur officiis error. Ipsa?</p>
+    
+    <h2>French paragraph : selected using  <b>:lang()</b></h2>
+
+    <p lang="fr">
+        Dans l'arrière-pays de Provence, à 30 kilomètres au sud-ouest de Draguignan, l'Abbaye du Thoronet est un chef-d'œuvre de l'art roman provençal.
+    </p>
+    
+    
+</body>
+</html>
