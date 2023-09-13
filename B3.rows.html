@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.bundle.min.js"></script> 
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h4> row has only one column</h4>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="box"></div>
+            </div>
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+
+    <h4> offset-3 is used to give space btn two cols</h4>
+    <div class="container">
+        <div class="row">
+            <div class="col ">
+                <div class="box"></div>
+            </div>
+            <div class="col offset-3">
+                <div class="box"></div>
+            </div>
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+
+
+
+
+    <h4>every single row in the bootsrtap grid has 12 columns 
+    1/12 th of the screen is one column
+     row has multiple column</h4>
+    <div class="container text-center">
+        <div class="row">
+            <div class="col">
+                <div class="box"> 1 </div>
+            </div>
+            <div class="col-6">
+                <div class="box"> 6 </div>
+            </div>
+            <div class="col-3">
+                <div class="box">3 </div>
+            </div>
+            <div class="col">
+                <div class="box"> 1 </div>
+            </div>
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+
+    <h4>
+    here one column takes 10 col space since we have 3 more columns its adjusts and manages to display cols
+</h4>
+
+    <h2>
+    </h2>
+
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-1">
+                <div class="box"> 1 </div>
+            </div>
+            <div class="col-10">
+                <div class="box"> 10 </div>
+            </div>
+            <div class="col">
+                <div class="box"> </div>
+            </div>
+            <div class="col">
+                <div class="box">  </div>
+            </div>
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <h4>col and col auto are always changeable according to their content</h4>
+
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-auto">
+                <div class="box"> jjhi </div>
+            </div>
+            <div class="col-4">
+                <div class="box"> </div>
+            </div>
+            <div class="col">
+                <div class="box"> </div>
+            </div>
+            <div class="col">
+                <div class="box">hjjjjjjjjjj</div>
+            </div>
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+
+    <h4>col-lg-8 means that the col will take 8/12 of the cols when the size reaches large (lg) size</h4>
+    <h4>when it goes below large it becomes 100% width that means 12col size</h4>
+
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="box"></div>
+            </div>
+            <div class="col-lg-2 col">
+                <div class="box"> </div>
+            </div>
+            <div class="col">
+                <div class="box"></div>
+            </div>
+        </div>
+    </div>
+
+<br>
+<br>
+<br>
+
+<h4>row-cols-2 is used to have two columns in each row </h4>
+    <div class="container text-center">
+        <div class="row row-cols-2 row-cols-lg-4 "> <!--    in large size screen it will have 4 cols in default it will have 2 cols -->
+            <div class="col ">
+                <div class="box"></div>
+            </div>
+            <div class="col">
+                <div class="box"></div>
+            </div>
+            <div class="col">
+                <div class="box"></div>
+            </div>
+            <div class="col">
+                <div class="box"></div>
+            </div>
+            <div class="col">
+                <div class="box"></div>
+            </div>
+        </div>
+    </div>
+
+
+    <br>
+    <br>
+    <br>
+    <h4>gapp   gy-5 is gap for y axis gx-5 is for x axis and g-5 is for giving space on both sides</h4>
+    <div class="row row-cols-2 g-lg-4 g-2    "> 
+        <div class="col ">
+            <div class="box"></div>
+        </div>
+        <div class="col">
+            <div class="box"></div>
+        </div>
+        <div class="col">
+            <div class="box"></div>
+        </div>
+        <div class="col">
+            <div class="box"></div>
+        </div>
+        <div class="col">
+            <div class="box"></div>
+        </div>
+    </div>
+</div>
+
+<br>
+<br>
+<br>
+
+
+
+<h4>NESTED  rows</h4>
+<div class="row row-cols-2 g-4">
+    <div class="col">
+        <div class="row">
+            <div class="col"><div class="box"></div></div>
+            <div class="col"><div class="box"></div></div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="box"></div>
+    </div>
+    <div class="col">
+        <div class="box"></div>
+    </div>
+    <div class="col">
+        <div class="row">
+            <div class="col"><div class="box"></div></div>
+            <div class="col"><div class="box"></div></div>
+            <div class="col"><div class="box"></div></div>
+        </div>
+    </div>
+    
+    <div class="col">
+        <div class="box"></div>
+    </div>
+    <div class="col">
+        <div class="box"></div>
+    </div>
+</div>
+
+    
+</body>
+</html>
