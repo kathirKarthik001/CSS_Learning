@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.bundle.min.js"></script> 
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+
+    <h2>Modal Button</h2>
+
+    <!-- 
+        
+        button tag - with  " btn-close" class will give a x mark for closing modals
+
+        data-bs-toggle="modal"  ==> making the modal to open when we press that button
+
+        data-bs-target ==>  targetting the paraticular modal
+        data-bs-dismiss ==>  dismissing the modal ==> functionality to that button
+
+        modal-dialog-scrollable - used to make only the content of the modal alone* scrollable -->
+    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal"> modal 1 </button>
+
+
+    <div class="modal fade modal-md" id="modal">
+        <div class="modal-dialog modal-dialog-scrollable modal-fullscreen-md-down "> <!-- full  screen when size goes below md -->
+            <div class="modal-content ">
+                <div class="modal-header"> 
+                    <h2>header</h2>
+                    <button class="btn-close" data-bs-target="modal" data-bs-dismiss="modal"></button>
+                </div>
+
+                <div class="modal-body">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae debitis quo vitae ut, animi beatae sed natus, labore minima, et ab aperiam perspiciatis! Sint amet neque blanditiis perferendis. Officia praesentium vitae, illo veritatis sit et, facilis autem adipisci nesciunt provident eius iusto accusantium ipsam explicabo corporis fuga ut pariatur ex, neque placeat nam quaerat possimus. Odio, asperiores minus! Expedita error eius possimus accusantium iusto voluptate esse nam quidem delectus cupiditate, dolore aliquid suscipit ducimus facere. Asperiores tempore veritatis a quod dolores laborum quae ducimus vitae corporis, velit ipsum numquam rerum magnam ullam earum sed nam quo. Ratione est quasi aliquam. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos nobis esse adipisci quas quisquam, velit hic, voluptates nostrum exercitationem recusandae officia. Odio veniam voluptatum accusantium quo ut quis libero unde blanditiis quibusdam veritatis molestiae, recusandae id vero ipsum, rem atque velit obcaecati perspiciatis perferendis culpa dignissimos. Obcaecati deleniti assumenda iste? Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa esse tenetur eaque beatae ipsa ex, asperiores rem unde? Culpa, minima ipsam? Rem tenetur consectetur voluptatum architecto dolores recusandae distinctio maiores temporibus, corrupti autem itaque inventore dicta facilis quam sed illo deleniti quis quae ipsum in accusamus ex obcaecati. Error doloremque tempora praesentium, minima incidunt rerum fugit dolorem! Earum repellendus qui quod molestiae sint, fugit illum repudiandae amet saepe omnis maxime vero architecto perspiciatis nam porro magnam quaerat eligendi ad dignissimos quos facilis excepturi aliquid. Distinctio sapiente maxime debitis quia porro molestiae quo ea tenetur cupiditate, eum optio quod commodi veritatis ad doloremque, quibusdam labore voluptas provident illum consectetur modi assumenda nihil sequi. Ipsum quidem nihil praesentium vel omnis doloremque magnam ex? Consequatur corporis, tempore soluta illum quaerat corrupti expedita autem ea! Nemo vitae cumque labore quibusdam quidem maxime aperiam eos voluptates accusantium quia iusto suscipit tenetur eligendi, placeat laborum magnam voluptate dolore aspernatur, corporis doloribus eveniet corrupti. Cum possimus quisquam libero sunt veritatis ab minus, sint nostrum ipsam architecto officia tempore velit neque nobis reiciendis, esse nam necessitatibus provident, enim cumque explicabo. Voluptate doloribus cupiditate illum quas, assumenda saepe, quibusdam commodi tenetur eum quasi quia dolore adipisci reprehenderit delectus eligendi vel illo odio veritatis consectetur hic asperiores sequi maxime nulla laborum! Reiciendis eius ut suscipit maiores nisi et odit exercitationem voluptatum praesentium reprehenderit veniam hic, rem sapiente fugiat dolor earum sint voluptas, officiis minus fuga iste! Eos aliquid ex molestias, libero dicta fugiat doloremque optio recusandae debitis! Amet corrupti nam distinctio est voluptates animi doloremque tenetur quo minus nulla, doloribus quae accusantium deserunt harum ducimus enim molestiae qui alias expedita debitis. Sapiente reprehenderit non cumque minus dicta similique molestias ab dolores vero minima, et iste neque quas at reiciendis alias aut, nam beatae libero vitae atque delectus accusamus? Tenetur, nesciunt!
+
+                    </div>
+
+                <div class="modal-footer"> 
+                     footer 
+                    <button class=" btn btn-primary"  data-bs-dismiss="modal" data-bs-target="modal">close</button>
+                </div>
+             
+        </div>
+        </div>
+    </div>
+  
+     
+</div>
+
+
+<div class="container">
+    
+    <h2>toggle button</h2>
+
+
+<!-- .row ==> select all rows   #id selects only the specified one -->
+
+    <button class="btn btn-primary" data-bs-toggle="collapse" data-bs-target=".row"   aria-expanded="false" aria-controls="row"> Toggle</button>
+        
+            <div class="row collapse " id="row">
+                <div class="col">
+                    <div class="box"></div>
+                </div>
+            </div>
+
+           <div class="row collapse " id="rtyui">           <!-- show ===> added in class will make the toggle row appear by default -->
+                <div class="col">
+                    <div class="box"></div>
+                </div>  
+            </div>
+
+
+    
+     
+</div>
+</body>
+</html>
